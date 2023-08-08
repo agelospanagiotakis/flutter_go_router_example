@@ -24,9 +24,9 @@ class BookList extends StatelessWidget {
           title: Text(
             books[index].title,
           ),
-          subtitle: Text(
-            books[index].author.name,
-          ),
+          subtitle: const Text("test"
+              // books[index]!.author.name,
+              ),
           // onTap: onTap != null ? () => onTap!(context, books[index]) : null,
           onTap: () {
             int bid = books[index].id;

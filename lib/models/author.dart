@@ -9,5 +9,14 @@ class Author {
   final String name;
   final books = <Book>[];
 
-  Author(this.id, this.name);
+  Author({required this.id, required this.name});
+
+  factory Author.fromJson(Map<String, dynamic> json) {
+    var data = Author(
+      id: (json["id"]),
+      name: (json["authorName"]),
+    );
+
+    return data;
+  }
 }

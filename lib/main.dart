@@ -30,6 +30,12 @@ class ScaffoldWithNavigationRail extends StatelessWidget {
             selectedIndex: selectedIndex,
             onDestinationSelected: onDestinationSelected,
             labelType: NavigationRailLabelType.all,
+            elevation: 3,
+            useIndicator: true,
+            backgroundColor: Colors.white,
+            indicatorColor: Colors.blue,
+            // leading
+            // trailing:
             destinations: const <NavigationRailDestination>[
               NavigationRailDestination(
                 label: Text('QR Code'),

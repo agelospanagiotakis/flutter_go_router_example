@@ -7,14 +7,26 @@ import 'author.dart';
 class Book {
   final int id;
   final String title;
-  final Author author;
+  final Author? author = null;
   final bool isPopular;
   final bool isNew;
 
-  Book(
-      {required this.id,
-      required this.title,
-      required this.isPopular,
-      required this.isNew,
-      required this.author});
+  Book({
+    required this.id,
+    required this.title,
+    required this.isPopular,
+    required this.isNew,
+  });
+
+  factory Book.fromJson(Map<String, dynamic> json) {
+    var data = Book(
+        id: json["id"],
+        title: json["title"],
+        isPopular: json["isPopular"],
+        isNew: json["isNew"]
+        // author: json["author"],
+        );
+
+    return data;
+  }
 }

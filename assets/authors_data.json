@@ -1,0 +1,16 @@
+{
+    "authors": [
+        {
+            "id": 1,
+            "authorName": "Ursula K. Le Guin"
+        },
+        {
+            "id": 2,
+            "authorName": "Ada Palmer"
+        },
+        {
+            "id": 3,
+            "authorName": "Octavia E. Butler"
+        }
+    ]
+}

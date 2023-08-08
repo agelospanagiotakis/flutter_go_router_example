@@ -1,0 +1,34 @@
+{
+   "books"
+   :
+   [ 
+    {
+        "id" : 1,
+        "title": "Left Hand of Darkness",
+        "authorName": "Ursula K. Le Guin",
+        "isPopular": false,
+        "isNew": true
+    },
+    {
+        "id" : 2,
+        "title": "Too Like the Lightning",
+        "authorName": "Ada Palmer",
+        "isPopular": true,
+        "isNew": false
+    },
+    {
+        "id" : 3,
+        "title": "Kindred",
+        "authorName": "Octavia E. Butler",
+        "isPopular": false,
+        "isNew": false
+    },
+    {
+        "id" : 4,
+        "title": "The Lathe of Heaven",
+        "authorName": "Ursula K. Le Guin",
+        "isPopular": true,
+        "isNew": true
+    }
+]
+}
