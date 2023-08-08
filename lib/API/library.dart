@@ -10,9 +10,9 @@ import 'package:flutter/services.dart';
 import '../models/author.dart';
 import '../models/book.dart';
 
-final libraryInstance = Library()
-  ..loadAuthorsFromJson()
-  ..loadBooksFromJson();
+// final libraryInstance = Library()
+// ..loadAuthorsFromJson()
+// ..loadBooksFromJson();
 
 // ..addBook(
 //     title: 'Left Hand of Darkness',

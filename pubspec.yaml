@@ -13,8 +13,8 @@ dependencies:
     sdk: flutter
   go_router: ^10.0.0
   cupertino_icons: ^1.0.5
-
-
+  get_it: 
+  
 dev_dependencies:
   flutter_test:
     sdk: flutter  

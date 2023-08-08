@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
 import '../API/library.dart';
+import '../main.dart';
 import 'widgets/author_list.dart';
 
 class AuthorsScreen extends StatelessWidget {
@@ -16,7 +17,7 @@ class AuthorsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) => Scaffold(
         body: AuthorList(
-          authors: libraryInstance.allAuthors,
+          authors: getIt<Library>().allAuthors,
           onTap: (author) {
             context.push('/author/${author.id}');
           },

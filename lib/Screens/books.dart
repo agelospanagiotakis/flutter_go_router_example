@@ -5,6 +5,7 @@
 import 'package:flutter/material.dart';
 
 import '../API/library.dart';
+import '../main.dart';
 import 'widgets/book_list.dart';
 
 class BooksScreen extends StatefulWidget {
@@ -87,13 +88,13 @@ class _BooksScreenState extends State<BooksScreen>
           controller: _tabController,
           children: [
             BookList(
-              books: libraryInstance.popularBooks,
+              books: getIt<Library>().popularBooks,
             ),
             BookList(
-              books: libraryInstance.newBooks,
+              books: getIt<Library>().newBooks,
             ),
             BookList(
-              books: libraryInstance.allBooks,
+              books: getIt<Library>().allBooks,
             ),
           ],
         ),

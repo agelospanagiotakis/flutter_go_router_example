@@ -1,11 +1,22 @@
 import 'package:flutter/material.dart';
 // ignore: depend_on_referenced_packages
 import 'package:flutter_web_plugins/url_strategy.dart';
+import 'package:get_it/get_it.dart';
+import 'package:nested_navigation_gorouter_example/API/library.dart';
 
 import 'my_app.dart';
 
+final getIt = GetIt.instance;
+
 void main() {
   // turn off the # in the URLs on the web
+  getIt.registerSingleton<Library>(Library());
+  // use it as
+  WidgetsFlutterBinding.ensureInitialized();
+
+  getIt<Library>().loadAuthorsFromJson();
+  getIt<Library>().loadBooksFromJson();
+
   usePathUrlStrategy();
   runApp(const MyApp());
 }

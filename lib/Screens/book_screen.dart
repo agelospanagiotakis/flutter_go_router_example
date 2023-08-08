@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:nested_navigation_gorouter_example/API/library.dart';
 
+import '../main.dart';
 import '../models/book.dart';
 
 /// The details screen for either the A or B screen.
@@ -26,6 +27,7 @@ class BookScreenState extends State<BookScreen> {
   @override
   Widget build(BuildContext context) {
     bookId = widget.bookId;
+    var libraryInstance = getIt<Library>();
     var ret = libraryInstance.allBooks.where((Book book) {
       return (book.id.toString() == bookId.toString());
     }).toList();
